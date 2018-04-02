@@ -1,0 +1,56 @@
+FACE
+------------
+create table face(cid number(3),
+	          fname varchar2(20),
+	          lname varchar2(20),
+                            aname varchar2(20),
+                            dob date,
+	          age number(2),
+                            gender varchar2(10),
+                            address varchar2(10),
+                            city varchar2(10),
+	         state varchar2(10),
+                            arresteddate date,
+	         crimein varchar2(10),
+                            photo  varchar2(50)
+                           );
+
+FACE_HEIGHTS
+-------------------------
+
+
+create table face_height(cid number(5),
+		    hair number(5),
+		    forehead number(5),
+		    eyes number(5),
+		    nose number(5),
+		    lips number(5),
+		    chin number(5)
+		    );
+
+FACE_SUSPECTPHOTO
+-----------------------------------
+
+create table face_suspectphoto(crimeid number(5),
+		               suspectphoto varchar2(15),
+                                                    photo_height varchar2(15)
+                                                    );
+
+
+CRIMINAL_SUSPECT
+-------------------------------
+create table criminal_suspect(cid number(5),
+		            criminalId number(5)
+                                                  );
+
+FACE_SUSPECTS
+---------------------------
+
+create table face_suspects(crimeid number(5),
+		            cid number(5)
+                                            );
+
+
+ 	 	  		
+		
+		
